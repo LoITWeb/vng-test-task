@@ -1,0 +1,88 @@
+:root {
+	--font-family: "Open Sans", sans-serif;
+	--second-family: "Roboto", sans-serif;
+
+	--max-width: 1480px;
+	--padding: 0 20px;
+	--margin: 0 auto;
+
+	--black: #272A33;
+	--white: #FFFFFF;
+	--accent: #EE753E;
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("/fonts/OpenSans-Regular.woff2") format("woff2"),
+		url("/fonts/OpenSans-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url("/fonts/OpenSans-Bold.woff2") format("woff2"),
+		url("/fonts/OpenSans-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("/fonts/Roboto-Regular.woff2") format("woff2"),
+		url("/fonts/Roboto-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("/fonts/Roboto-Bold.woff2") format("woff2"),
+		url("/fonts/Roboto-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	max-width: var(--max-width);
+	padding: var(--padding);
+	margin: var(--margin);
+}
+
+body {
+	height: 100%;
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--black);
+	background-color: var(--white);
+}
+
+h2 {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 135%;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
